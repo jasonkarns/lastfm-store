@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+<head>
+    <title>Last.FM Store</title>
+    <link href="styles/jquery.ui.coverflow.css" rel="stylesheet" type="text/css" />
+    <link href="styles/jquery.nyroModal.css" rel="stylesheet" type="text/css" />
+    <link href="styles/theme/ui.theme.css" rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    
+<!-- step 1 -->
+    <script src="scripts/jquery-1.2.6.js" type="text/javascript"></script>
+
+<!-- step 3.5 -->
+    <script src="scripts/jquery-1.3.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var $131 = jQuery.noConflict(true);
+    </script>
+    
+<!-- step 3 -->
+    <script src="scripts/jquery.nyroModal-1.3.1.js" type="text/javascript">
+        //http://nyromodal.nyrodev.com/
+    </script>
+    
+<!-- step 6 -->
+    <script src="scripts/ui-1.5.3/jquery.ui.all.js" type="text/javascript"></script>
+    <script src="scripts/jquery.ui.coverflow.js" type="text/javascript">
+        //http://paulbakaus.com/lab/js/coverflow/
+    </script>
+    
+    <script src="scripts/main8.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="artistSearch" method="get" action="http://ws.audioscrobbler.com/2.0/">
+        <fieldset>
+            <input type="text" id="artist" name="artist" />
+            <button type="submit" id="submit">Search</button>
+            <input type="hidden" id="method" name="method" value="artist.search" />
+            <input type="hidden" id="format" name="format" value="json" />
+            <input type="hidden" id="api_key" name="api_key" value="9885f563b9665afd771ffe66a454037e" />
+            <ul id="artistSearchResults">
+            </ul>
+        </fieldset>
+    </form>
+    <h2 id="currentArtist"></h2>
+    <h3>Albums</h3>
+    <div id="artistAlbums">
+        <ul class="coverflow">
+        </ul>
+        <div class="caption"></div>
+        <div class="ui-slider">
+            <div class="ui-slider-handle"></div>
+        </div>
+        <div class="basket">
+            <a class="inactive" href="#cart">Shopping Cart<br /><span class="count"></span></a>
+            <span class="active">Drop Album Here!</span>
+        </div>
+    </div>
+    <h3>Similar Artists</h3>
+    <ul id="similarArtists"></ul>
+    <h3>Your shopping cart.</h3>
+    <ul id="cart"></ul>
+</body>
+</html>

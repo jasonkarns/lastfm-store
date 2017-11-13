@@ -1,0 +1,29 @@
+﻿html { background-color:#000; color:#FFF; }
+a { color:#000; }
+fieldset { border:2px outset red; -moz-border-radius-topleft:15px; -moz-border-radius-bottomright:15px; background-color: #888; }
+h3 { display:none; }
+#artistSearchResults li { display:inline; margin-right:1.5em; }
+.artist-preview { padding-left:16px; background:url('../images/preview.png') no-repeat left 6px; width:0; display:inline-block; overflow:hidden; }
+.loading { height:2em; background:url('../images/loading.gif') no-repeat center center; }
+.album-image { height:126px; width:126px; }
+
+#similarArtists { margin:0; padding:0; text-align:center; }
+#similarArtists a { color:#000; }
+#similarArtists .artist-name { margin-right:.5em; }
+#similarArtists li { display:-moz-inline-box; margin:1em; padding:1em; text-align:center; 
+    border:2px outset red; -moz-border-radius-topleft:25px; -moz-border-radius-bottomright:25px; background-color:#888; }
+#similarArtists li img { display:block; margin:auto;}
+
+.basket { text-align:center; padding-top:.5em; border:3px outset red; height:50px; width:150px; top:0; right:0; position:absolute; -moz-border-radius-topleft:25px; -moz-border-radius-bottomright:25px; background-color:#888; }
+.droppable-active { border-color:white; }
+.active { display:none; }
+.droppable-active .active { display:inline; }
+.inactive { display:inline; }
+.droppable-active .inactive { display:none; }
+.droppable-hover { border-style:inset; }
+
+#cart { margin:0; padding:0; text-align:center; }
+#cart li { display:-moz-inline-box; margin:1em; padding:1em; text-align:center; 
+    border:2px outset red; -moz-border-radius-topleft:25px; -moz-border-radius-bottomright:25px; background-color:#888; }
+#cart li img { display:block; margin:auto;}
+#cart p { display:inline; }
