@@ -4,7 +4,7 @@
 
 (function($) {
     $.ajaxSetup({
-        url: "http://ws.audioscrobbler.com/2.0/?callback=?",
+        url: "https://ws.audioscrobbler.com/2.0/?callback=?",
         data: {
             //"api_key": "9885f563b9665afd771ffe66a454037e",
             "api_key": "b25b959554ed76058ac220b7b2e0a026",
